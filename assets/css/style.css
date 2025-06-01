@@ -25,7 +25,7 @@ img {
      opacity: 0;
     transform: translateY(-50px);
     animation: slideDown 1s ease forwards;
-    animation-delay: 0.3s;
+    animation-delay: 0.1s;
 }
 .menu-toggle {
   display: none;
