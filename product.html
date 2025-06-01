@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title> <!-- Bootstrap core CSS -->
     <!-- Add Bootstrap CSS -->
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,24 +17,25 @@
 </head>
 <body>
     
-    <header class="header-area"id=stickyheader>
-        <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <nav class="main-nav">
-                           <h2>Clothing <strong>Centre</strong></h2>
-                            <ul class="items">
-                                <li class="li-items"><a href="index.html">Home</a></li>
-                                <li class="li-items"><a href="product.html">Our Products</a></li>
-                                <li class="li-items"><a href="aboutus.html">About</a></li>
-                                <li class="li-items"><a href="">Contact Us</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+   <header class="header-area"id=stickyheader>
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="main-nav">
+                       <h2>Clothing <strong>Centre</strong></h2>
+                       <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
+                       <ul class="items" id="mobileMenu">
+                            <li class="li-items"><a href="index.html">Home</a></li>
+                            <li class="li-items"><a href="product.html">Our Products</a></li>
+                            <li class="li-items"><a href="aboutus.html">About</a></li>
+                            <li class="li-items"><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
     <!-- page content -->
      <div class="section" id="page-content">
         <div class="container">
@@ -122,8 +124,6 @@
                                   </ul>
                                   <span>Reviews(24)</span>
                         </div>
-                    
-                   
                     </div>
                </div>
             </div>
@@ -194,6 +194,7 @@
         </div>
     </div>
 </div>
+
 <ul class="pagination">
     <li class="page-item "><a href="#"class="page-link active">1</a></li>
     <li class="page-item"><a href="#"class="page-link">2</a></li>
@@ -226,6 +227,14 @@ window.addEventListener('scroll', function() {
 });
 
 </script>
+<!-- for navbar -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+  }
+</script>
+
 
 
      <!-- Bootstrap core JavaScript -->
