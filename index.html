@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Clothing Centre</title>
     <!-- Bootstrap core CSS -->
    <!-- Add Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -22,7 +22,8 @@
                 <div class="col-md-12">
                     <nav class="main-nav">
                        <h2>Clothing <strong>Centre</strong></h2>
-                        <ul class="items">
+                       <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
+                       <ul class="items" id="mobileMenu">
                             <li class="li-items"><a href="index.html">Home</a></li>
                             <li class="li-items"><a href="product.html">Our Products</a></li>
                             <li class="li-items"><a href="aboutus.html">About</a></li>
@@ -34,6 +35,8 @@
         </div>
     </div>
 </header>
+
+
 <!-- carousel -->
 <div id="mycarousel" class="carousel slide " data-ride="carousel">
     <div class="carousel-inner">
@@ -236,7 +239,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
             </div>
             <div class="col-md-6">
-                <a href="" class="btn btn-danger">Purchase Now</a>
+                <a href="product.html" class="btn btn-danger">Purchase Now</a>
             </div>
         </div>
     </div>
@@ -255,6 +258,15 @@
     }
 });
  </script>
+ <!-- for navbar -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+  }
+</script>
+
+
 <!-- Bootstrap core JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
