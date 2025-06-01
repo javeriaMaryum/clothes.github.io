@@ -23,7 +23,8 @@
                 <div class="col-md-12">
                     <nav class="main-nav">
                        <h2>Clothing <strong>Centre</strong></h2>
-                        <ul class="items">
+                       <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
+                       <ul class="items" id="mobileMenu">
                             <li class="li-items"><a href="index.html">Home</a></li>
                             <li class="li-items"><a href="product.html">Our Products</a></li>
                             <li class="li-items"><a href="aboutus.html">About</a></li>
@@ -174,10 +175,15 @@
     let content = element.nextElementSibling;
     content.style.display = (content.style.display === "block") ? "none" : "block";
 }
+</script>
+<!-- for navbar -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+  }
+</script>
 
-
-
- </script>
 <!-- Bootstrap core JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
