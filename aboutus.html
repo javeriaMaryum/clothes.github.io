@@ -23,7 +23,8 @@
                 <div class="col-md-12">
                     <nav class="main-nav">
                        <h2>Clothing <strong>Centre</strong></h2>
-                        <ul class="items">
+                       <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
+                       <ul class="items" id="mobileMenu">
                             <li class="li-items"><a href="index.html">Home</a></li>
                             <li class="li-items"><a href="product.html">Our Products</a></li>
                             <li class="li-items"><a href="aboutus.html">About</a></li>
@@ -209,27 +210,18 @@
             <div class="col-md-12">
                 <h3>Happy Partners</h3>
                 <hr>
-                <div class="client-items">
                 <div class="client">
                     <img src="assets/img/calvin.png">
-                </div>
-                <div class="client">
-                    <img src="assets/img/versage.png">
-                </div>
-                <div class="client">
-                    <img src="assets/img/dior.png">
-                </div>
-                <div class="client">
-                    <img src="assets/img/gucci.png">
-                </div>
-                <div class="client">
-                    <img src="assets/img/ziara.png">
+                <img src="assets/img/versage.png">
+                     <img src="assets/img/dior.png">
+               <img src="assets/img/gucci.png">
+                 <img src="assets/img/ziara.png">
                 </div>
                 </div>
             </div>
         </div>
     </div>
- </div>
+
  
 <footer class="footer">
     <hr>
@@ -245,6 +237,14 @@
     }
 });
  </script>
+ <!-- for navbar -->
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("mobileMenu");
+    menu.classList.toggle("show");
+  }
+</script>
+
 <!-- Bootstrap core JavaScript -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
